@@ -33,13 +33,14 @@ while (continuar){
             default:
                 nivel = "Radiante"
             break
-    }
+     }
     // resultado
     console.log("O Herói de nome " +nome+ " está no nível de " +nivel)
 
     // perguntar se deseja continuar ou não
-    continuar = prompt("Deseja continuar? S/N")
-    if continuar == "S" || "s" {
+    let resposta = prompt("Deseja continuar? S/N")
+
+    if (resposta == "S" || "s") {
         continuar = true
     } else {
         continuar = false
